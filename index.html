@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="img/favikon.png" type="image/png" />
+    <title>JS - новая школа Frontenda</title>
+  </head>
+  <body>
+    <div class="site-container">
+      <header class="header mb-4">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <a class="navbar-brand me-5" href="#"
+              ><img class="logo" src="./img/favikon.png" alt="Логотип"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Переключатель навигации"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #fff" aria-current="page" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #fff" href="#course">О курсе</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #fff" href="#programma-course"
+                    >Программа курса</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #fff" href="#teachers">Преподаватели</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: #fff" href="#price">Тарифы</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="hero mb-4">
+          <div class="container">
+            <div class="hero__block">
+              <div class="hero__block-content">
+                <h1 class="hero__title">Понимание программирования начинается с Frontend</h1>
+                <a class="btn hero__link" href="#price">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="advantages mb-4">
+          <div class="container">
+            <div class="row text-center mb-4">
+              <h2 style="color: #fff; font-weight: 600">Что ты сможешь на курсе?</h2>
+            </div>
+            <div class="row d-flex flex-wrap mb-4">
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="d-flex flex-column">
+                  <div class="" style="color: #fff">
+                    Реализуешь себя в онлайн и найдешь дело по душе
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="d-flex flex-column">
+                  <div class="" style="color: #fff">
+                    Получишь твердые навыки для успешной карьеры и высокого заработка
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="d-flex flex-column">
+                  <div class="" style="color: #fff">
+                    Создашь собственное портфолио из сайтов и WEB-приложений
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="d-flex flex-column">
+                  <div class="" style="color: #fff">Найдешь свое место в новой эре IT</div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="row justify-content-center">
+              <a class="btn" href="#price">Начни путь к мечте</a>
+            </div> -->
+          </div>
+        </section>
+        <section class="start-course mb-4">
+          <div class="container">
+            <div class="row text-center mb-4">
+              <h2 style="color: #000; font-weight: 600">Этот курс подходит для:</h2>
+            </div>
+            <div class="course__block">
+              <div class="course__block-card">
+                <div class="d-flex flex-column">
+                  <h3 class="text-center">Студентов</h3>
+                  <ul>
+                    <li>Хочешь свободы и стабильного заработка</li>
+                    <li>Понимаешь, что IT - это будущее и ищешь новые возможности</li>
+                    <li>Хочешь развиваться онлайн и реализовывать свои мечты</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="course__block-card">
+                <div class="d-flex flex-column">
+                  <h3 class="text-center">Фрилансерам</h3>
+                  <ul>
+                    <li>Устал работать дешево и много</li>
+                    <li>Стабильный и крупный чек</li>
+                    <li>Хочешь иметь сильное портфолио и кейсы</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="course__block-card">
+                <div class="d-flex flex-column">
+                  <h3 class="text-center">Работающим</h3>
+                  <ul>
+                    <li>Работаешь, но мало платят ? Совмещай её + онлайн и получи прибавку</li>
+                    <li>Ищешь свободный график и быстрый карьерный рост</li>
+                    <li>
+                      Хочешь найти работу, которую делаешь с удовольствием, а не потому, что надо
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="course__block-card">
+                <div class="d-flex flex-column">
+                  <h3 class="text-center">Учащимся старших классов</h3>
+                  <ul>
+                    <li>Желаешь самостоятельности и зарабатывать на исполнение желаний</li>
+                    <li>Хочешь быть уверенным в своем будущем</li>
+                    <li>Считаешь, что практические знания лучше академических</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <a class="btn" href="#price">Сдалай шаг к успеху</a>
+            </div>
+          </div>
+        </section>
+        <section class="course mb-4" id="course">
+          <div class="container">
+            <div class="row text-center mb-4">
+              <h2 style="color: #fff; font-weight: 600">Что ждет тебя на курсе:</h2>
+            </div>
+
+            <div class="row d-flex flex-wrap justify-content-around">
+              <div class="about">
+                <div class="about__card">
+                  <img class="about__card-img" src="./img/vacantion.jpg" alt="Картинка" />
+                  <div class="about__card-text">
+                    <h5 style="color: blue">Вакансии и оплачиваемые задания</h5>
+                    <p>
+                      Вы можете даже не искать клиентов самостоятельно. Мы сделаем это за вас и
+                      выставим информацию в новостях школы.
+                    </p>
+                  </div>
+                </div>
+                <div class="about__card">
+                  <img class="about__card-img" src="./img/lesson.jpg" alt="Картинка" />
+                  <div class="about__card-text">
+                    <h5 style="color: blue">Короткие уроки</h5>
+                    <p>
+                      — это концентрация базовых знаний самых востребованных навыков. Каждый студент
+                      на курсе получит необходимый опыт, а также оформит своё портфолио для того,
+                      чтобы реализоваться в профессии
+                    </p>
+                  </div>
+                </div>
+                <div class="about__card">
+                  <img class="about__card-img" src="./img/nastavnik.jpg" alt="Картинка" />
+                  <div class="about__card-text">
+                    <h5 style="color: blue">Персональная поддержка от наставника</h5>
+                    <p>
+                      За вами будет закреплен персонавльный наставник - эксперт в области Frontend.
+                      Для максимально персональной, быстрой и эффективной связи и поддержки
+                      предоставляется чат с куратором и с другими учащимися
+                    </p>
+                  </div>
+                </div>
+                <div class="about__card">
+                  <img class="about__card-img" src="./img/expert.jpg" alt="Картинка" />
+                  <div class="about__card-text">
+                    <h5 style="color: blue">Приглашенные спикеры и эксперты</h5>
+                    <p>
+                      Топовые специалисты расскажут вам о своей профессии в деталях, объяснят, как
+                      работать в IT и расскажут как это сделать, ведь каждый из них уже прошел этот
+                      путь.
+                    </p>
+                  </div>
+                </div>
+                <div class="about__card">
+                  <img class="about__card-img" src="./img/chat.jpg" alt="Картинка" />
+                  <div class="about__card-text">
+                    <h5 style="color: blue">Чат однокурсников</h5>
+                    <p>
+                      С однокурсниками вы в одной сфере. Они всегда помогут, поддержат и подскажут.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="end-course mb-4">
+          <div class="container">
+            <div class="row text-center mb-4">
+              <h2 style="color: #000; font-weight: 600">После окончания курса</h2>
+            </div>
+            <div class="row d-flex flex-wrap justify-content-between mb-3">
+              <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column text-center">
+                <p class="border border-primary p-3">
+                  Освоишь востребованные навыки в профессии frontend
+                </p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column text-center">
+                <p class="border border-primary p-3">
+                  Научишься проходить собеседования в любую компанию
+                </p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column text-center">
+                <p class="border border-primary p-3">Станешь востребованным специалистом</p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column text-center">
+                <p class="border border-primary p-3">
+                  К окончанию курса будешь иметь солидное портфолио
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <a class="btn" href="#price">Готов начать зарабатывать</a>
+          </div>
+        </section>
+        <section class="programma-course mb-4" id="programma-course">
+          <div class="container">
+            <div class="row text-center mb-4">
+              <h2 style="color: #fff; font-weight: 600">Программа курса</h2>
+            </div>
+            <div class="row">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      Основные темы по направлению Frontend
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne"
+                  >
+                    <div class="accordion-body">
+                      <p style="color: rgb(18, 51, 236)">
+                        <i
+                          >На данном этапе мы ознакомимся с основными тегами HTML, класса CSS и
+                          самыми популярными JS-плагинами</i
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      Продвинутый HTML
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo"
+                  >
+                    <div class="accordion-body">
+                      <p style="color: rgb(18, 51, 236)">
+                        <i
+                          >Научимся верстать HTML-письма, SVG, оптимизировать загрузку, ознакомимся
+                          с препроцессорами, сборщиками и GRIDами</i
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                      Язык программирования Java-Script
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree"
+                  >
+                    <div class="accordion-body">
+                      <p style="color: rgb(18, 51, 236)">
+                        <i
+                          >Это будет самый крупный блок в нашем обучении. Вы с нуля научитесь
+                          разрабатывать полноценные сайты и веб-приложения на JS</i
+                        >
+                      </p>
+                      <p style="color: rgb(18, 51, 236)">
+                        <i
+                          >Также изучим Node.js - расширяет возможности языка JavaScript и выступает
+                          в роли веб-сервера. С помощью этой платформы вы научитесь создавать
+                          полноценные веб-приложения и CLI-утилиты — и сможете вырасти как
+                          разработчик</i
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseFour"
+                    >
+                      Вершина нашего курса самые популярные фреймфорки Vue.js & React.js
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour"
+                  >
+                    <div class="accordion-body">
+                      <p style="color: rgb(18, 51, 236)">
+                        <i>Расширьте свои компетенции, изучив трендовый фреймворк Vue.js</i>
+                      </p>
+                      <p style="color: rgb(18, 51, 236)">
+                        <i
+                          >Расширьте свои профессиональные знания и навыки разработчика, научившись
+                          использовать в работе фреймворк React.js</i
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="teachers mb-4" id="teachers">
+          <div class="container">
+            <div class="row text-center mb-4">
+              <h2 style="color: #000; font-weight: 600">Кто и чему будет обучать</h2>
+            </div>
+            <div class="row d-flex flex-wrap">
+              <ul class="teachers__list list-reset">
+                <li class="">
+                  <div class="teachers__item">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="img/teacher-1-mobile.jpg" />
+                      <source media="(max-width: 767px)" srcset="img/teacher-1-mini.jpg" />
+                      <source media="(max-width: 991px)" srcset="img/teacher-1-tablet.jpg" />
+                      <img
+                        src="img/teacher-1.jpg"
+                        alt="Преподаватель Влад Коваленко"
+                        class="teachers__image"
+                      />
+                    </picture>
+                    <div class="teachers__item-text teachers__item-text1">
+                      <h4 class="teachers__item-title">Влад Коваленко</h4>
+                      <p class="teachers__item-descr">Fullstack-разработчик на JavaScript</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="">
+                  <div class="teachers__item">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="img/teacher-2-mobile.jpg" />
+                      <source media="(max-width: 767px)" srcset="img/teacher-2-mini.jpg" />
+                      <source media="(max-width: 991px)" srcset="img/teacher-2-tablet.jpg" />
+                      <img
+                        src="img/teacher-2.jpg"
+                        alt="Преподаватель Денис Сергеев"
+                        class="teachers__image"
+                      />
+                    </picture>
+                    <div class="teachers__item-text teachers__item-text2">
+                      <h4 class="teachers__item-title">Денис Сергеев</h4>
+                      <p class="teachers__item-descr">
+                        Наш гуру. Мы не представляем вопроса в котором не разбирается Денис.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="teachers__item">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="img/teacher-3-mobile.jpg" />
+                      <source media="(max-width: 767px)" srcset="img/teacher-3-mini.jpg" />
+                      <source media="(max-width: 991px)" srcset="img/teacher-3-tablet.jpg" />
+                      <img
+                        src="img/teacher-3.jpg"
+                        alt="Преподаватель Михаил Андреев"
+                        class="teachers__image"
+                      />
+                    </picture>
+                    <div class="teachers__item-text teachers__item-text3">
+                      <h4 class="teachers__item-title">Михаил Андреев</h4>
+                      <p class="teachers__item-descr">
+                        Ведущий Backend-разработчик в крупнейшем российском банке.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="">
+                  <div class="teachers__item">
+                    <picture>
+                      <source media="(max-width: 576px)" srcset="img/teacher-4-mobile.jpg" />
+                      <source media="(max-width: 767px)" srcset="img/teacher-4-mini.jpg" />
+                      <source media="(max-width: 991px)" srcset="img/teacher-4-tablet.jpg" />
+                      <img
+                        src="img/teacher-4.jpg"
+                        alt="Преподаватель Стефан Вукович"
+                        class="teachers__image"
+                      />
+                    </picture>
+                    <div class="teachers__item-text teachers__item-text4">
+                      <h4 class="teachers__item-title">Стефан Вукович</h4>
+                      <p class="teachers__item-descr">
+                        Стефан приехал к нам из Сербии, запустил в РФ свой IT-стартап
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="price mb-4" id="price">
+          <div class="container">
+            <div class="row text-center mb-4">
+              <h2 style="color: #fff; font-weight: 600">Тарифы</h2>
+              <p style="color: #fff; font-weight: 300">Выбери удобный для тебя тариф обучения</p>
+            </div>
+            <div class="row d-flex cards__course">
+              <div class="col-lg-3 col-md-6 col-sm-12 p-2 d-flex position-relative card__course">
+                <div class="card w-100">
+                  <h5 class="card-header">Основы Frontend</h5>
+                  <div class="card-body card__content">
+                    <ul class="card__list">
+                      <li>Что такое IT?</li>
+                      <li>Базовый HTML</li>
+                      <li>Базовый CSS</li>
+                      <li>Валидация классов CSS</li>
+                      <li>Адаптивность сайта</li>
+                      <li>Доступность</li>
+                      <li>Кроссбраузерность</li>
+                      <li>Flex & Grid</li>
+                    </ul>
+                    <div class="d-flex flex-column card__buttons">
+                      <button class="btn btn-pay">30000 руб</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 p-2 d-flex position-relative card__course">
+                <div class="card w-100">
+                  <h5 class="card-header">Продвинутая верстка</h5>
+                  <div class="card-body card__content">
+                    <ul class="card__list">
+                      <li>Курс основы Frontend</li>
+                      <li>Верстка писем</li>
+                      <li>SVG, анимация</li>
+                      <li>Сборщики</li>
+                      <li>Препроцессоры и постпроцессоры</li>
+                      <li>CSS Grid</li>
+                      <li>Будущее верстки</li>
+                    </ul>
+                    <div class="text-center d-flex flex-column card__buttons">
+                      <button class="btn btn-pay">60000 руб</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 p-2 d-flex position-relative card__course">
+                <div class="card w-100">
+                  <h5 class="card-header">JS разработчик</h5>
+                  <div class="card-body card__content">
+                    <ul class="card__list">
+                      <li>Курс продвинутая верстка</li>
+                      <li>Переменные</li>
+                      <li>Строки, boolean и условные операторы</li>
+                      <li>Массивы и циклы</li>
+                      <li>Функции и ООП</li>
+
+                      <li>Общение с сервером</li>
+                      <li>Node.js</li>
+                    </ul>
+                    <div class="text-center d-flex flex-column card__buttons">
+                      <button class="btn btn-pay">90000 руб</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 p-2 d-flex position-relative card__course">
+                <div class="card w-100">
+                  <h5 class="card-header">FRONTEND PRO</h5>
+                  <div class="card-body card__content">
+                    <ul class="card__list">
+                      <li>Курс JS-разработчика</li>
+                      <li>Основы Vue.js</li>
+                      <li>Создание проекта</li>
+                      <li>Работа с API</li>
+                      <li>React.js</li>
+                      <li>Модульная система</li>
+                      <li>Хуки, Роутинг</li>
+                      <li>Работа с API</li>
+                    </ul>
+                    <div class="text-center d-flex flex-column card__buttons">
+                      <button class="btn btn-pay">120000 руб</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="questions mb-4">
+          <div class="container">
+            <div class="row text-center mb-4">
+              <h2>Популярные вопросы</h2>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    style="font-weight: 600"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Можно ли оплатить в кредит?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Да, мы можем предоставить такую возможность. Вы можете оформить кредит от
+                      банка. Для этого нажмите «оплатить» и в способе оплаты выберите кредит.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    style="font-weight: 600"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Как оформить кредит или рассрочку?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Напрямую писать в форму обратной связи по кнопке "Написать". С вами свяжется
+                      наш сотрудник и обсудит варианты кредитования
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    style="font-weight: 600"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Как проходят уроки?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Уроки в записии на учебной платформе. Каждая тема разделена на модули по
+                      окончании, которого вам надо будет сделать домашнее задание. Предоставляется
+                      наставник, который подскажет или посоветует, что надо более детально изучить,
+                      и будет проверять вашу работу
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    style="font-weight: 600"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Смогу ли я совмещать работу и обучение?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Да! Все уроки находятся в записи, поэтому, если ты не успеешь сразу посмотреть
+                      урок, то сможешь вернуться к нему позже
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer mb-4" id="footer">
+        <div class="container">
+          <div
+            class="row p-3 d-flex justify-content-between mb-4"
+            style="background-color: #fff; border-radius: 20px"
+          >
+            <div class="flex-wrap">
+              <div class="d-flex flex-column text-center">
+                <h3>Поможем в выборе!</h3>
+                <p>
+                  Если у&nbsp;вас есть вопросы о&nbsp;формате обучения или вас интересует
+                  возможность покупки в кредит,оставьте свой номер&nbsp;&mdash; мы&nbsp;позвоним
+                </p>
+              </div>
+              <div>
+                <form id="form" action="./php/mail.php" method="POST" enctype>
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      placeholder="Фамилия, Имя"
+                      name="name"
+                      class="form-control _req"
+                      id="exampleInputName"
+                      aria-describedby="nameHelp"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="tel"
+                      name="tel"
+                      placeholder="Телефон"
+                      class="form-control _req"
+                      id="exampleInputPhone"
+                      aria-describedby="phoneHelp"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Электронная почта"
+                      class="form-control _req _email"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <p>
+                    Оставляя заявку, вы соглашаетесь на
+                    <a href="./document/politika_oprabotki_dannih_ARINA.docx" target="_blank"
+                      >обработку персональных данных</a
+                    >
+                  </p>
+
+                  <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-between" style="color: #fff">
+            <div class="d-flex flex-column col-lg-5 col-md-5 col-sm-12">
+              <div class="d-flex justify-content-between">
+                <p>Телефон</p>
+                <a class="href" href="tel:+79277531617">8(927)753-16-17</a>
+              </div>
+              <div class="d-flex justify-content-between">
+                <p>Почта</p>
+                <a class="href" href="mailto:skupchenko@aktivkredit.ru"
+                  >skupchenko@aktivkredit.ru</a
+                >
+              </div>
+              <p data-bs-toggle="modal" data-bs-target="#exampleModalPay" style="cursor: pointer">
+                Оплата
+              </p>
+              <p>
+                <a
+                  href="./document/politika_oprabotki_dannih_ARINA.docx"
+                  class="href"
+                  target="_blank"
+                  >Политика конфиденциальности</a
+                >
+              </p>
+              <!-- <p>
+                <a href="http://e-jschool.ru/document/info_credit_all.pdf" class="href" target="_blank"
+                  >Общие условия кредитования</a
+                >
+              </p> -->
+            </div>
+            <div class="d-flex flex-column col-lg-5 col-md-5 col-sm-12">
+              <p>ООО «Арина»</p>
+              <p>ИНН: 6324104280</p>
+              <p>КПП: 632401001</p>
+              <p>ОГРН: 1196313069150</p>
+            </div>
+          </div>
+          <div class="row"></div>
+        </div>
+      </footer>
+
+      <div
+        class="modal fade"
+        id="exampleModalCredit"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header modal-header--sber">
+              <h2 class="modal-title" id="exampleModalLabel">
+                Условия по программе "Покупай&nbsp;со&nbsp; Сбером"
+              </h2>
+              <img
+                class="modal-header--sber-img"
+                src="./img/pokupay_logo_color.svg"
+                alt="Логотип"
+              />
+            </div>
+            <div class="modal-body">
+              <h4 class="modal__pay-title">Основные требования:</h4>
+              <ul>
+                <li><p class="modal__pay-descr">Гражданство РФ</p></li>
+                <li>
+                  <p class="modal__pay-descr">
+                    Возраст покупателя - от 21 до 70 лет на момент возврата кредита по договору
+                  </p>
+                </li>
+                <li>
+                  <p class="modal__pay-descr">
+                    Наличие постоянной (временной) регистрации по месту жительства/пребывания на
+                    территории Российской Федерации
+                  </p>
+                </li>
+              </ul>
+              <h4 class="modal__pay-title">Преимущества сервиса:</h4>
+              <ul>
+                <li><p class="modal__pay-descr">Без первоначального взноса по кредиту</p></li>
+                <li><p class="modal__pay-descr">Срок действия рассрочки: 6 месяцев</p></li>
+                <li><p class="modal__pay-descr">Срок действия кредита от 3 до 36 месяцев</p></li>
+                <li><p class="modal__pay-descr">Сумма кредита от 3 000 до 300 000 рублей</p></li>
+              </ul>
+              <h4 class="modal__pay-title">Клиентский сценарий:</h4>
+              <ul>
+                <li>
+                  <p class="modal__pay-descr">
+                    Выберите на сайте товар или услугу, заполните форму для обратной связи или
+                    свяжитесь с нами самостоятельно
+                  </p>
+                </li>
+                <li>
+                  <p class="modal__pay-descr">
+                    С вами свяжется менеджер, уточнит детали заказа и направит ссылку для оформления
+                    кредита
+                  </p>
+                </li>
+                <li>
+                  <p class="modal__pay-descr">
+                    Когда откроется СберБанк Онлайн, авторизуйтесь и заполните заявку. Рассмотрение
+                    заявки займет несколько минут
+                  </p>
+                </li>
+                <li>
+                  <p class="modal__pay-descr">
+                    Если кредит одобрен, деньги за покупку автоматически будут перечислены на счёт
+                    магазина
+                  </p>
+                </li>
+              </ul>
+              <p class="modal__pay-descr">
+                Подробнее с условиями кредитования можно ознакомиться на странице
+                <a href="https://www.pokupay.ru/credit_terms" target="_blank"
+                  >https://www.pokupay.ru/credit_terms</a
+                >
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Закрыть
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal fade"
+        id="exampleModalPay"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="exampleModalLabel">ОПЛАТА</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Закрыть"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modal__pay-title">Оплата банковской картой онлайн</h3>
+              <p class="modal__pay-descr">
+                Наш сайт подключен к&nbsp;интернет-эквайрингу, и&nbsp;вы&nbsp;можете оплатить товар
+                банковской картой Visa, MasterCard, Maestro и&nbsp;МИР. После подтверждения
+                выбранного товара откроется защищенное окно с&nbsp;платежной страницей
+                процессингового центра CloudPayments, где вам необходимо ввести данные вашей
+                банковской карты.
+              </p>
+              <p class="modal__pay-descr">
+                Для дополнительной аутентификации держателя карты используется протокол
+                3D&nbsp;Secure. Если ваш банк поддерживает данную технологию, вы&nbsp;будете
+                перенаправлены на&nbsp;его сервер для дополнительной идентификации.
+              </p>
+              <p class="modal__pay-descr">
+                Информацию о&nbsp;правилах и&nbsp;методах дополнительной идентификации уточняйте
+                в&nbsp;банке, выдавшем вам банковскую карту.
+              </p>
+              <h6 class="modal__pay-title">Гарантии безопасности</h6>
+              <p class="modal__pay-descr">
+                Процессинговый центр CloudPayments защищает и&nbsp;обрабатывает данные вашей
+                банковской карты по&nbsp;стандарту безопасности PCI&nbsp;DSS 3.2. Передача
+                информации в&nbsp;платежный шлюз происходит с&nbsp;применением технологии шифрования
+                SSL.
+              </p>
+              <p class="modal__pay-descr">
+                Дальнейшая передача информации происходит по&nbsp;закрытым банковским сетям, имеющим
+                наивысший уровень надежности. CloudPayments не&nbsp;передает данные вашей карты нам
+                и&nbsp;иным третьим лицам. Для дополнительной аутентификации держателя карты
+                используется протокол 3D&nbsp;Secure.
+              </p>
+              <p class="modal__pay-descr">
+                В&nbsp;случае, если у&nbsp;вас есть вопросы по&nbsp;совершенному платежу,
+                вы&nbsp;можете обратиться в&nbsp;службу поддержки клиентов платежного сервиса
+                по&nbsp;электронной почте
+                <a href="mailto:support@cloudpayments.ru">support@cloudpayments.ru</a>
+              </p>
+              <h6 class="modal__pay-title">Безопасность онлайн платежей</h6>
+              <p class="modal__pay-descr">
+                Предоставляемая вами персональная информация (имя, адрес, телефон, e-mail, номер
+                кредитной карты) является конфиденциальной и&nbsp;не&nbsp;подлежит разглашению.
+                Данные вашей кредитной карты передаются только в&nbsp;зашифрованном виде
+                и&nbsp;не&nbsp;сохраняются на&nbsp;нашем Web-сервере.
+              </p>
+              <p class="modal__pay-descr">
+                Мы&nbsp;рекомендуем вам проверить, что ваш браузер достаточно безопасен для
+                проведения платежей онлайн, на&nbsp;специальной странице.
+              </p>
+              <p class="modal__pay-descr">
+                Безопасность обработки Интернет-платежей гарантирует ООО «КлаудПэйментс». Все
+                операции с платежными картами происходят в соответствии с требованиями VISA
+                International, MasterCard и других платежных систем. При передаче информации
+                используются специальные технологии безопасности карточных онлайн-платежей, данных
+                ведется на безопасном высокотехнологичном сервере процессинговой компании.
+              </p>
+              <img src="./img/HorizontalLogos.svg" alt="" />
+              <img src="./img/сбер пнг.png" alt="" style="width: 200px" />
+
+              <h3 class="modal__pay-title">Конфиденциальность</h3>
+              <p class="modal__pay-descr">
+                Федеральный закон РФ № 152-ФЗ «О персональных данных» — федеральный закон,
+                регулирующий деятельность по обработке (использованию) персональных данных.
+              </p>
+              <p class="modal__pay-descr">
+                По вопросам, касающимся настоящей политики, просьба обращаться по адресу
+                <a href="mailto:skupchenko@aktivkredit.ru">skupchenko@aktivkredit.ru</a>
+              </p>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Закрыть
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/inputmask.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script>
+      var selector = document.querySelector("input[type='tel']");
+
+      var im = new Inputmask('+7 (999)-999-99-99');
+      im.mask(selector);
+
+      const validate = new window.JustValidate('.form');
+      validate
+        .addField('#name', [
+          {
+            rule: 'minLength',
+            value: 2,
+            errorMessage: 'Слишком короткое имя',
+          },
+          {
+            rule: 'maxLength',
+            value: 30,
+            errorMessage: 'Слишком длинное имя',
+          },
+          {
+            rule: 'required',
+            errorMessage: 'Вы не ввели имя',
+          },
+        ])
+        .addField('#email', [
+          {
+            rule: 'required',
+            errorMessage: 'Вы не ввели email',
+          },
+          {
+            rule: 'email',
+            errorMessage: 'Email не верен!',
+          },
+        ])
+        .addField('#tel', [
+          {
+            rule: 'required',
+            errorMessage: 'Вы не ввели телефон телефон!',
+          },
+          {
+            validator: function (name, value) {
+              const phone = selector.inputmask.unmaskedvalue();
+              return Number(phone) && phone.length === 10;
+            },
+            errorMessage: 'Номер телефона должен содержать 10 цифр.',
+          },
+        ]);
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/scriptPay.js"></script>
+    <script src="./js/scriptCredit.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
