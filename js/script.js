@@ -5,8 +5,8 @@ async function formSend(e) {
   e.preventDefault();
   let formData = new FormData(form);
 
-  let response = await fetch('../php/mail_script.php', {
-    // let response = await fetch('../mail.php', {
+  // let response = await fetch('../php/mail_script.php', {
+    let response = await fetch('../mail.php', {
     method: 'POST',
     body: formData,
   });
