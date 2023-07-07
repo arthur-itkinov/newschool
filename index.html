@@ -710,45 +710,46 @@
                 </p>
               </div>
               <div>
-                <form id="form" action="" method="POST" enctype>
-                  <div class="mb-3">
+                <form action="#" class="form" method="POST" enctype="multipart/form-data">
+                  <label class="form__label">
                     <input
+                      class="input input-name"
                       type="text"
-                      placeholder="Фамилия, Имя"
-                      name="name"
-                      class="form-control _req"
-                      id="exampleInputName"
-                      aria-describedby="nameHelp"
+                      data-validate-field="name"
+                      name="Имя"
+                      placeholder="Введите имя"
                     />
-                  </div>
-                  <div class="mb-3">
+                  </label>
+                  <label class="form__label">
                     <input
-                      type="tel"
-                      name="tel"
-                      placeholder="Телефон"
-                      class="form-control _req"
-                      id="exampleInputPhone"
-                      aria-describedby="phoneHelp"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <input
+                      class="input input-mail"
                       type="email"
-                      name="email"
-                      placeholder="Электронная почта"
-                      class="form-control _req _email"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
+                      data-validate-field="email"
+                      name="Email"
+                      placeholder="Введите email"
                     />
-                  </div>
-                  <p>
-                    Оставляя заявку, вы соглашаетесь на
-                    <a href="./document/politika_oprabotki_dannih_ARINA.docx" target="_blank"
-                      >обработку персональных данных</a
-                    >
-                  </p>
-
-                  <button type="submit" class="btn btn-primary">Отправить</button>
+                  </label>
+                  <label class="form__label">
+                    <input
+                      class="input input-tel"
+                      type="tel"
+                      data-validate-field="tel"
+                      name="Телефон"
+                      placeholder="Введите телефон"
+                    />
+                  </label>
+                  <label class="form__label">
+                    <textarea
+                      class="textarea"
+                      name="Сообщение"
+                      id=""
+                      cols="30"
+                      rows="3"
+                      placeholder="Введите ваше сообщение"
+                    ></textarea>
+                  </label>
+                  <input class="input" type="file" name="file[]" multiple id="myfile" />
+                  <button class="btn">Отправить</button>
                 </form>
               </div>
             </div>
@@ -878,166 +879,22 @@
           </div>
         </div>
       </div>
-
-      <div
-        class="modal fade"
-        id="exampleModalPay"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-xl">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title" id="exampleModalLabel">ОПЛАТА</h2>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Закрыть"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <h3 class="modal__pay-title">Оплата банковской картой онлайн</h3>
-              <p class="modal__pay-descr">
-                Наш сайт подключен к&nbsp;интернет-эквайрингу, и&nbsp;вы&nbsp;можете оплатить товар
-                банковской картой Visa, MasterCard, Maestro и&nbsp;МИР. После подтверждения
-                выбранного товара откроется защищенное окно с&nbsp;платежной страницей
-                процессингового центра CloudPayments, где вам необходимо ввести данные вашей
-                банковской карты.
-              </p>
-              <p class="modal__pay-descr">
-                Для дополнительной аутентификации держателя карты используется протокол
-                3D&nbsp;Secure. Если ваш банк поддерживает данную технологию, вы&nbsp;будете
-                перенаправлены на&nbsp;его сервер для дополнительной идентификации.
-              </p>
-              <p class="modal__pay-descr">
-                Информацию о&nbsp;правилах и&nbsp;методах дополнительной идентификации уточняйте
-                в&nbsp;банке, выдавшем вам банковскую карту.
-              </p>
-              <h6 class="modal__pay-title">Гарантии безопасности</h6>
-              <p class="modal__pay-descr">
-                Процессинговый центр CloudPayments защищает и&nbsp;обрабатывает данные вашей
-                банковской карты по&nbsp;стандарту безопасности PCI&nbsp;DSS 3.2. Передача
-                информации в&nbsp;платежный шлюз происходит с&nbsp;применением технологии шифрования
-                SSL.
-              </p>
-              <p class="modal__pay-descr">
-                Дальнейшая передача информации происходит по&nbsp;закрытым банковским сетям, имеющим
-                наивысший уровень надежности. CloudPayments не&nbsp;передает данные вашей карты нам
-                и&nbsp;иным третьим лицам. Для дополнительной аутентификации держателя карты
-                используется протокол 3D&nbsp;Secure.
-              </p>
-              <p class="modal__pay-descr">
-                В&nbsp;случае, если у&nbsp;вас есть вопросы по&nbsp;совершенному платежу,
-                вы&nbsp;можете обратиться в&nbsp;службу поддержки клиентов платежного сервиса
-                по&nbsp;электронной почте
-                <a href="mailto:support@cloudpayments.ru">support@cloudpayments.ru</a>
-              </p>
-              <h6 class="modal__pay-title">Безопасность онлайн платежей</h6>
-              <p class="modal__pay-descr">
-                Предоставляемая вами персональная информация (имя, адрес, телефон, e-mail, номер
-                кредитной карты) является конфиденциальной и&nbsp;не&nbsp;подлежит разглашению.
-                Данные вашей кредитной карты передаются только в&nbsp;зашифрованном виде
-                и&nbsp;не&nbsp;сохраняются на&nbsp;нашем Web-сервере.
-              </p>
-              <p class="modal__pay-descr">
-                Мы&nbsp;рекомендуем вам проверить, что ваш браузер достаточно безопасен для
-                проведения платежей онлайн, на&nbsp;специальной странице.
-              </p>
-              <p class="modal__pay-descr">
-                Безопасность обработки Интернет-платежей гарантирует ООО «КлаудПэйментс». Все
-                операции с платежными картами происходят в соответствии с требованиями VISA
-                International, MasterCard и других платежных систем. При передаче информации
-                используются специальные технологии безопасности карточных онлайн-платежей, данных
-                ведется на безопасном высокотехнологичном сервере процессинговой компании.
-              </p>
-              <img src="./img/HorizontalLogos.svg" alt="" />
-              <img src="./img/сбер пнг.png" alt="" style="width: 200px" />
-
-              <h3 class="modal__pay-title">Конфиденциальность</h3>
-              <p class="modal__pay-descr">
-                Федеральный закон РФ № 152-ФЗ «О персональных данных» — федеральный закон,
-                регулирующий деятельность по обработке (использованию) персональных данных.
-              </p>
-              <p class="modal__pay-descr">
-                По вопросам, касающимся настоящей политики, просьба обращаться по адресу
-                <a href="mailto:skupchenko@aktivkredit.ru">skupchenko@aktivkredit.ru</a>
-              </p>
-            </div>
-
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                Закрыть
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <script src="./js/inputmask.min.js"></script>
-    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
-    <script>
-      var selector = document.querySelector("input[type='tel']");
-
-      var im = new Inputmask('+7 (999)-999-99-99');
-      im.mask(selector);
-
-      const validate = new window.JustValidate('.form');
-      validate
-        .addField('#name', [
-          {
-            rule: 'minLength',
-            value: 2,
-            errorMessage: 'Слишком короткое имя',
-          },
-          {
-            rule: 'maxLength',
-            value: 30,
-            errorMessage: 'Слишком длинное имя',
-          },
-          {
-            rule: 'required',
-            errorMessage: 'Вы не ввели имя',
-          },
-        ])
-        .addField('#email', [
-          {
-            rule: 'required',
-            errorMessage: 'Вы не ввели email',
-          },
-          {
-            rule: 'email',
-            errorMessage: 'Email не верен!',
-          },
-        ])
-        .addField('#tel', [
-          {
-            rule: 'required',
-            errorMessage: 'Вы не ввели телефон телефон!',
-          },
-          {
-            validator: function (name, value) {
-              const phone = selector.inputmask.unmaskedvalue();
-              return Number(phone) && phone.length === 10;
-            },
-            errorMessage: 'Номер телефона должен содержать 10 цифр.',
-          },
-        ]);
-    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
       crossorigin="anonymous"
     ></script>
+    <script defer src="libs/inputmask.min.js"></script>
+    <script defer src="libs/just-validate3.3.3.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
       integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="./js/scriptPay.js"></script> -->
-    <!-- <script src="./js/scriptCredit.js"></script> -->
+
     <script src="./js/script.js"></script>
+    <script defer src="./js/script-new.js"></script>
   </body>
 </html>

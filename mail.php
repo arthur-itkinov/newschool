@@ -4,12 +4,12 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
-$title = "Тема письма";
+$title = "Письмо с сайта новая школа";
 $file = $_FILES['file'];
 
 $c = true;
 // Формирование самого письма
-$title = "Заголовок письма";
+$title = "Письмо с сайта новая школа";
 foreach ( $_POST as $key => $value ) {
   if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
     $body .= "
@@ -33,16 +33,16 @@ try {
 
   // Настройки вашей почты
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'itkinov6'; // Логин на почте
+  $mail->Username   = 'itkinov6@gmail.com'; // Логин на почте
   $mail->Password   = 'xvisibffirlmkuni'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
-  // $mail->Port       = 465;
-  $mail->Port       = 587;
+  $mail->Port       = 465;
 
-  $mail->setFrom('', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
+
+  $mail->setFrom('itkinov6@gmail.com', 'Заявка с сайта Новая школа'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('');
+  $mail->addAddress('itkinov6@gmail.com');
 
   // Прикрипление файлов к письму
   if (!empty($file['name'][0])) {
