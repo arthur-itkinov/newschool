@@ -32,14 +32,18 @@ try {
   $mail->SMTPAuth   = true;
 
   // Настройки вашей почты
+  // $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+  // $mail->Username   = 'itkinov6'; // Логин на почте
+  // $mail->Password   = 'pgzorgevsonpjwab'; // Пароль на почте
+  // $mail->SMTPSecure = 'ssl';
+  // $mail->Port       = 465;
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'itkinov6'; // Логин на почте
-  $mail->Password   = 'pgzorgevsonpjwab'; // Пароль на почте
+  $mail->Username   = 'aktivpay2023'; // Логин на почте
+  $mail->Password   = 'sjsnhjfzlinbjwlb'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-
-  $mail->setFrom('itkinov6@gmail.com'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('', 'Заявка с сайта Новая школа'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
   $mail->addAddress('itkinov6@gmail.com');
@@ -62,7 +66,6 @@ try {
   $mail->isHTML(true);
   $mail->Subject = $title;
   $mail->Body = $body;
-
   $mail->send();
 
 } catch (Exception $e) {
