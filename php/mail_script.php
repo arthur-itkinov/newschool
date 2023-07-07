@@ -2,13 +2,13 @@
 
 // var_dump($_POST);
 
-$rez = ss_mail('itkinov6@gmail.com', 'Заявка с http://e-jschool.ru/', 'ФИО:' . $_POST['name'] . ". Телефон: " . $_POST['tel'] . ". E-mail: " . $_POST['email']);
+$rez = ss_mail('itkinov6@gmail.com', 'Заявка с новой школы', 'ФИО:' . $_POST['name'] . ". Телефон: " . $_POST['tel'] . ". E-mail: " . $_POST['email']);
 
 function ss_mail($to, $subject, $text)
 {
   require_once "SendMailSmtpClass2.php"; // подключаем класс
 
-  $mailSMTP = new SendMailSmtpClass('arthur.itkinov@yandex.ru', 'XP7-9Wx-Sjt-49w', 'ssl://smtp.yandex.ru', 465, "UTF-8");
+  $mailSMTP = new SendMailSmtpClass('arthur.itkinov@yandex.ru', 'xijqkfrckygweulf', 'ssl://smtp.yandex.ru', 465, "UTF-8");
 
   $from = array(
     "artur", // Имя отправителя

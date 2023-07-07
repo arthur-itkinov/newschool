@@ -36,7 +36,8 @@ try {
   $mail->Username   = 'itkinov6'; // Логин на почте
   $mail->Password   = 'xvisibffirlmkuni'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
-  $mail->Port       = 465;
+  // $mail->Port       = 465;
+  $mail->Port       = 587;
 
   $mail->setFrom('', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
