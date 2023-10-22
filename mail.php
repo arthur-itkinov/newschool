@@ -38,15 +38,15 @@ try {
   // $mail->SMTPSecure = 'ssl';
   // $mail->Port       = 465;
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'aktivpay2023'; // Логин на почте
-  $mail->Password   = 'sjsnhjfzlinbjwlb'; // Пароль на почте
+  $mail->Username   = ''; // Логин на почте
+  $mail->Password   = ''; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
   $mail->setFrom('', 'Заявка с сайта Новая школа'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('itkinov6@gmail.com');
+  $mail->addAddress('');
 
   // Прикрипление файлов к письму
   if (!empty($file['name'][0])) {
